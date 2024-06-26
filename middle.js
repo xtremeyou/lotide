@@ -34,8 +34,8 @@ const middle = function (array) {
       midArr.push(array[newArr]);
       midArr.push(array[newArr + 1]);
     }
-    return midArr;
   }
+  return midArr;
 };
 assertEqualArrays(middle([1]), []); // expected output -> []
 assertEqualArrays(middle([1, 2]), []);
