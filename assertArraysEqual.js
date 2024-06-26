@@ -16,7 +16,8 @@ const eqArrays = function (array1, array2) {
     } else {
         console.log(`🛑🛑🛑 Assertion failed: ${array1} === ${array2}`);
     }
-  };const mug = {
+  };
+  const mug = {
     color: "white"
 }
   console.log(eqArrays([1, 2, 3], [1, 2, 3]));
