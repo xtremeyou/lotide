@@ -36,7 +36,7 @@ const eqObjects = function (object1, object2) {
 const shirtObject = { color: "red", size: "medium" };
 const anotherShirtObject = { size: "medium", color: "red" };
 eqObjects(shirtObject, anotherShirtObject); // => true
-//We need to use that return value in combination with assertEquals to test if the function is working correctly.
+
 assertEqual(eqObjects(shirtObject, anotherShirtObject), true);
 
 const longSleeveShirtObject = {
@@ -44,5 +44,5 @@ const longSleeveShirtObject = {
   color: "red",
   sleeveLength: "long",
 };
-eqObjects(shirtObject, longSleeveShirtObject); // => false
+eqObjects(shirtObject, longSleeveShirtObject);
 assertEqual(eqObjects(shirtObject, longSleeveShirtObject), false);
