@@ -26,7 +26,7 @@ const eqObjects = function (object1, object2) {
 
     if (Array.isArray(val1) && Array.isArray(val2)) {
       if (!eqArrays(val1, val2)) return false;
-    } else if (val1 !== val2) {
+    } else if (val1 === val2) {
       return false;
     }
   }
