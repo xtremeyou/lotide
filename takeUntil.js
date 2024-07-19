@@ -1,10 +1,6 @@
 //two parameters 1, array to work with
 //t2, the callback, which lodash calls predicate
 
-const { assertArraysEqual } = require(".");
-
-
-
 const takeUntil = function(array, callback) {
     // write a for loop to loop through array
     let resultIndex = array.length;

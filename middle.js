@@ -1,23 +1,10 @@
-
-
 const middle = function (array) {
-  let newArr = [];
-  let emptyArr = [];
-  let midArr = [];
-  for (let i = 0; i < array.length; i++) {
-    if (array.length <= 2) {
-      return emptyArr;
-    }
-    if (array.length % 2 === 1) {
-      newArr = Math.floor(array.length / 2);
-      midArr.push(array[newArr]);
-    } else {
-      newArr = array.length / 2 - 1;
-      midArr.push(array[newArr]);
-      midArr.push(array[newArr + 1]);
-    }
+  if (array.length <= 2) {
+    return [];
   }
-  return midArr;
+  const mid = Math.floor(array.length / 2);
+
+  return array.length % 2 === 0 ? array.slice(mid - 1, mid + 1) : array.slice(mid, mid + 1);
 };
 
 module.exports = middle;

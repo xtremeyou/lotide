@@ -1,5 +1,3 @@
-
-
 const without = function (source, itemsToRemove) {
   const result = [];
 
