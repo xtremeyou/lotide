@@ -1,10 +1,10 @@
 
-const findKeyByValue = function (objects, callBack) {
+const findKeyByValue = function (object, callBack) {
     let results;
     
-    for (let key in objects) {
-        if (objects.hasOwnProperty(key)) {
-            if (callBack(objects[key])) {
+    for (let key in object) {
+        if (object.hasOwnProperty(key)) {
+            if (callBack(object[key])) {
                 results = key;
                 break;
             }
