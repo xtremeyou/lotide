@@ -13,4 +13,4 @@ const findKeyByValue = function (objects, callBack) {
     return results;
 };
 
-module.exports = findKeyByValue
+module.exports = findKeyByValue;

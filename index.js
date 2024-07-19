@@ -16,7 +16,6 @@ const eqArrays = require("./eqArrays");
 const eqObjects = require("./eqObjects");
 
 module.exports = {
-  //can also write these with just the name and no : ...
   head,
   tail,
   middle,

@@ -15,5 +15,4 @@ const letterPositions = function (charLocation) {
     }
   return results; 
 };
-
 module.exports = letterPositions;
