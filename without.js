@@ -13,8 +13,3 @@ const without = function (source, itemsToRemove) {
 
 module.exports = without;
 
-assertEqualArrays(without([1, 2, 3], [1]), [2, 3]);
-assertEqualArrays(without(["1", "2", "3"], [1, 2, "3"]), ["1", "2"]);
-const words = ["hello ", "world ", "lighthouse"];
-without(words, "Lighthouse");
-assertEqualArrays(words, ["hello ", "world ", "lighthouse"]);
