@@ -1,4 +1,3 @@
-
 const flatten = function (array) {
   //create palceholder for array
   let singleArray = [];
@@ -8,7 +7,7 @@ const flatten = function (array) {
       if (Array.isArray(item)) {
         singleArray = singleArray.concat(flatten(item));
       } else {
-        singleArray.push(item)
+        singleArray.push(item);
       }
     });
   } else {

@@ -1,5 +1,3 @@
-
-
 const countLetters = function (string) {
   const newSentence = {};
   for (const letters of string) {

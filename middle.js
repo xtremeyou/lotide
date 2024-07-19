@@ -4,7 +4,9 @@ const middle = function (array) {
   }
   const mid = Math.floor(array.length / 2);
 
-  return array.length % 2 === 0 ? array.slice(mid - 1, mid + 1) : array.slice(mid, mid + 1);
+  return array.length % 2 === 0
+    ? array.slice(mid - 1, mid + 1)
+    : array.slice(mid, mid + 1);
 };
 
 module.exports = middle;

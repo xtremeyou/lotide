@@ -1,5 +1,5 @@
-const assert = require('chai').assert;
-const { eqObjects } = require('../index');
+const assert = require("chai").assert;
+const { eqObjects } = require("../index");
 
 describe("#eqObjects", () => {
   it("returns true for { a: 1, b: 2 }, { b: 2, a: 1 }", () => {

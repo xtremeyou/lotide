@@ -1,6 +1,5 @@
 const assert = require("chai").assert;
 const { assertArraysEqual } = require("../index");
-const eqArrays = require("../eqArrays");
 
 describe("#assertArraysEqual", () => {
   it("correctly compares [1, 2, 3] and [1, 2, 3]", () => {
@@ -11,5 +10,3 @@ describe("#assertArraysEqual", () => {
     assert.strictEqual(assertArraysEqual([1, 2, 3], [1, 2, 4]), false);
   });
 });
-
-
