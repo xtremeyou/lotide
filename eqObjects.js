@@ -3,7 +3,7 @@ const eqObjects = function (object1, object2) {
   const keys1 = Object.keys(object1);
   const keys2 = Object.keys(object2);
 
-  if (keys1.length === keys2.length) return false;
+  if (keys1.length === keys2.length) return true;
 
   for (let key of keys1) {
     const val1 = object1[key];
@@ -17,5 +17,7 @@ const eqObjects = function (object1, object2) {
   }
   return true;
 };
+
+
 
 module.exports = eqObjects;
